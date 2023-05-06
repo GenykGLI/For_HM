@@ -1,4 +1,9 @@
 
-words = str(input('Enter three words on a snake_case style: '))
+word = str(input('Enter string in snake_case style: '))
+words = word.split('_')
 
-print(words)
+for i in range(len(words)):
+    words[i] = words[i].capitalize()
+
+rez = ''.join(words)
+print(rez)
