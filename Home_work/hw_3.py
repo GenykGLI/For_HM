@@ -33,19 +33,22 @@
 #     text = 'Ascending numbers'
 #     if digit_1 == digit_2:
 #         print('The input numbers are equal', digit_1, 'and',  digit_2)
+#     # elif digit_1 <= digit_2:
+#     #     print(text, digit_1, 'and',  digit_2)
+#     # elif digit_1 >= digit_2:
+#     #     print(text, digit_2, 'and', digit_1)
 #     else:
 #         print(text, min(digit_1, digit_2), 'and', max(digit_1, digit_2))
 # except ValueError:
 #     print('You got a ValueError')
-# else:
-#     print('Anyway you did a good job! ;)')
+
 
 
 # Exercise 3
-#
+
 # try:
 #     first_digit = int(input('Enter the first digit: '))
-#     operation = input('Enter the operation for calculation +, -, / or *:  ')
+#     operation = input('Enter the operation for calculation +, -, / or *: ')
 #     second_digit = int(input('Enter the second digit: '))
 #
 #     if operation == '+':
@@ -62,3 +65,5 @@
 #     print('error ValueError')
 # except ZeroDivisionError:
 #     print('error ZeroDivision')
+# else:
+#     print('Anyway you did a good job! ;)')
