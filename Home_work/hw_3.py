@@ -27,19 +27,18 @@
 
 # Exercise 2
 
-# try:
-#     digit_1 = int(input('Enter the first digit: '))
-#     digit_2 = int(input('Enter the second digit: '))
-#     text = 'Ascending numbers'
-#     if digit_1 == digit_2:
-#         print('The input numbers are equal', digit_1, 'and',  digit_2)
-#     else:
-#         print(text, min(digit_1, digit_2), 'and', max(digit_1, digit_2))
-# except ValueError:
-#     print('You got a ValueError')
-# else:
-#     print('Anyway you did a good job! ;)')
-
+try:
+    digit_1 = int(input('Enter the first digit: '))
+    digit_2 = int(input('Enter the second digit: '))
+    text = 'Ascending numbers'
+    if digit_1 == digit_2:
+        print('The input numbers are equal', digit_1, 'and',  digit_2)
+    else:
+        print(text, min(digit_1, digit_2), 'and', max(digit_1, digit_2))
+except ValueError:
+    print('You got a ValueError')
+else:
+    print('You did a good job! ;)')
 
 # Exercise 3
 #
