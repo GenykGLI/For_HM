@@ -41,7 +41,7 @@ try:
     men_2 = int(input('Sales of the second manager: '))
     men_3 = int(input('Sales of the third manager: '))
     best = 'The best manager is the'
-    other = 'Manger salary'
+    other = 'Manager salary'
 
     if 500 < men_1:
         salary1 = zp + (men_1 * 3)/100
@@ -65,11 +65,11 @@ try:
         else:
             salary3 = zp + (men_3 * 8)/100
     if salary1 > salary2 and salary1 > salary3:
-        print(f'{best} first manager!')
+        print(f'\n{best} first manager!')
     elif salary2 > salary1 and salary2 > salary3:
-        print(f'{best} second manager!')
+        print(f'\n{best} second manager!')
     else:
-        print(f'{best} third manager!')
+        print(f'\n{best} third manager!')
     print(f'''{other} first {salary1} \n{other} second {salary2} \n{other} third {salary3}''')
 except ValueError:
     print('You only need to enter the digits!')
