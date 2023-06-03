@@ -35,20 +35,42 @@
 # Exercise 3
 
 try:
-    zp_men = 200
-    prem_men = 200
+    zp = 200
+    prem = 200
     men_1 = int(input('Sales of the first manager: '))
     men_2 = int(input('Sales of the second manager: '))
     men_3 = int(input('Sales of the third manager: '))
+    best = 'The best manager is the'
+    other = 'Manger salary'
 
-    if men_1 <= 500:
-        print(round(200 + (men_1 * 3)/100, 2))
-    elif 500 < men_1 <= 1000:
-        print(round(200 + (men_1 * 5)/100, 2))
-    elif 1000 < men_1:
-        print(round(200 + (men_1 * 8)/100, 2))
-
-
+    if 500 < men_1:
+        salary1 = zp + (men_1 * 3)/100
+    else:
+        if 500 < men_1 > 1000:
+            salary1 = zp + (men_1 * 5)/100
+        else:
+            salary1 = zp + (men_1 * 8)/100
+    if 500 < men_2:
+        salary2 = zp + (men_2 * 3)/100
+    else:
+        if 500 < men_2 < 1000:
+            salary2 = zp + (men_2 * 5)/100
+        else:
+            salary2 = zp + (men_2 * 5)/100
+    if 500 < men_3:
+        salary3 = zp + (men_3 * 3)/100
+    else:
+        if 500 < men_3 < 1000:
+            salary3 = zp + (men_3 * 5)/100
+        else:
+            salary3 = zp + (men_3 * 8)/100
+    if salary1 > salary2 and salary1 > salary3:
+        print(f'{best} first manager!')
+    elif salary2 > salary1 and salary2 > salary3:
+        print(f'{best} second manager!')
+    else:
+        print(f'{best} third manager!')
+    print(f'''{other} first {salary1} \n{other} second {salary2} \n{other} third {salary3}''')
 except ValueError:
-    print('You only need to enter numbers!')
+    print('You only need to enter the digits!')
 
